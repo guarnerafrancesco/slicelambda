@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "slicelambda"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/guarnerafrancesco/slicelambda"
+authors:
+  - family-names: Guarnera
+    given-names: Francesco
+  - family-names: Rondinella
+    given-names: Alessia
+  - family-names: Ravì
+    given-names: Daniele
+  - family-names: Battiato
+    given-names: Sebastiano
+preferred-citation:
+  type: article
+  title: "The hidden slice-axis resolution of lesion ground truth: measurement, mechanism and consequences for evaluation in multiple sclerosis"
+  authors:
+    - family-names: Guarnera
+      given-names: Francesco
+    - family-names: Rondinella
+      given-names: Alessia
+    - family-names: Ravì
+      given-names: Daniele
+    - family-names: Battiato
+      given-names: Sebastiano
+  journal: "Medical Image Analysis"
+  status: submitted
+  year: 2026

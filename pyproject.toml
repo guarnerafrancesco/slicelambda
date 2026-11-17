@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slicelambda"
+version = "1.0.0"
+description = "How much slice-axis resolution a lesion ground truth hides: re-slicing, per-lesion Dice and the decay constant lambda"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Francesco Guarnera"},
+  {name = "Alessia Rondinella"},
+  {name = "Daniele Ravì"},
+  {name = "Sebastiano Battiato"},
+]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scipy>=1.7", "nibabel>=3.2"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+slicelambda = "slicelambda.cli:main"
+
+[tool.setuptools]
+packages = ["slicelambda"]

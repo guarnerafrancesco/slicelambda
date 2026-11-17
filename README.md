@@ -1,10 +1,9 @@
-# slicelambda
+# SliceLambda
 
 **How much slice-axis resolution does a lesion ground truth hide?**
 
-Code for the paper *The hidden slice-axis resolution of lesion ground truth: measurement,
-mechanism and consequences for evaluation in multiple sclerosis* (F. Guarnera, A. Rondinella,
-D. Ravì, S. Battiato; submitted to Medical Image Analysis).
+Code for the paper *SliceLambda: measuring the hidden slice-axis resolution of lesion ground truth
+in multiple sclerosis* (F. Guarnera, A. Rondinella, D. Ravì, S. Battiato).
 
 A lesion mask drawn on thin slices is re-sliced at larger thicknesses *T*. Each lesion is paired
 with its degraded pieces and its Dice is recorded. Grouped by depth *d* along the slice axis, the
@@ -12,7 +11,7 @@ per-lesion Dice follows
 
 $$R(T) = c + a\,e^{-\lambda (T-T_0)/d}, \qquad T > T_0,$$
 
-with one decay constant **λ** per dataset. `slicelambda` measures λ from the masks alone. It can
+with one decay constant **λ** per dataset. SliceLambda measures λ from the masks alone. It can
 also predict λ, with no fitted parameter, from the runs that lesions draw along the slice axis
 (the run-length model).
 
